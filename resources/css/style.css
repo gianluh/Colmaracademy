@@ -441,7 +441,7 @@ footer {
     margin-right: 24px;
 }
 
-@media only screen and (max-width: 501px) and (max-height: 950px) {
+@media only screen and (max-width: 500px) and (max-height: 950px) {
 
     body {
         width: 100%;
@@ -522,12 +522,15 @@ footer {
         display: inline-block;
         border: 0;
         width: 100%;
+        
     }
 
     .icard1image {
+        background-image: url('../images/information-orientation-mobile.jpg');
         margin-left: 0;
         width: 100%;
         height: 154px;
+        margin-right: 0;
     }
 
     .icard1text {
@@ -535,6 +538,7 @@ footer {
     }
 
     .icard1image img {
+        display: none;
         width: 100%;
         height: 100%;
     }
@@ -545,6 +549,7 @@ footer {
     }
 
     .icard2image {
+        background-image: url('../images/information-campus-mobile.jpg');
         margin-left: 0;
         width: 100%;
         height: 154px;
@@ -555,6 +560,7 @@ footer {
     }
 
     .icard2image img {
+        display: none;
         width: 100%;
         height: 100%;
     }
@@ -566,6 +572,7 @@ footer {
     }
 
     .icard3image {
+        background-image: url('../images/information-guest-lecture-mobile.jpg');
         margin-left: 0;
         width: 100%;
         height: 154px;
@@ -576,6 +583,7 @@ footer {
     }
 
     .icard3image img {
+        display: none;
         width: 100%;
         height: 100%;
     }
@@ -646,4 +654,98 @@ footer {
     .cr {
         margin-top: 16px;
     }
+}
+
+@media only screen and (max-width: 720px) and (max-height: 950px) {
+    
+        body {
+            width: 100%;
+        }
+    
+        nav {
+            width: 720px;
+            display: flex;
+            justify-content: space-between;
+        }
+    
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            width: auto;
+            gap: 180px;
+            margin-right: 64px;
+        }
+    
+        .logo {
+            width: 50px;
+        }
+    
+        .oncampus {
+            width: 27px;
+        }
+    
+        .login {
+            width: 28px;
+        }
+    
+        nav h3,
+        nav h2 {
+            display: none;
+        }
+
+        .introduction {
+            display: block;
+            padding-bottom: 8px;
+        }
+
+        .introtext {
+            width: 100%;
+            text-align: center;
+        }
+
+        .introbutton {
+            display: none;
+        }
+
+        .introimage {
+            margin: 0;
+            width: 100%;
+        }
+
+        .infomain {
+            display: none;
+        }
+
+        .infocards {
+            width: 100%;
+        }
+
+        .icard1,
+        .icard2,
+        .icard3 {
+            border: 0;
+            background-color: white;
+            display: block;
+            width: 20;
+        }
+
+        .infocards {
+            display: flex;
+            justify-content: space-between;
+            gap: 10%;
+        }
+
+        .icard1image,
+        .icard2image,
+        .icard3image,
+        .icard1image img,
+        .icard2image img,
+        .icard3image img {
+            margin: 0;
+            width: 100%;
+        }
+
+        .icard3 {
+            margin-right: 23px;
+        }
 }
